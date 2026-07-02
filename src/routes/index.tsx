@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { StudioIntro } from "@/components/sections/StudioIntro";
 import { Services } from "@/components/sections/Services";
+import { Showcase } from "@/components/sections/Showcase";
+import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { Packages } from "@/components/sections/Packages";
 import { BookingCTA } from "@/components/sections/BookingCTA";
 
@@ -34,6 +36,8 @@ function LandingPage() {
         <Hero />
         <StudioIntro />
         <Services />
+        <Showcase />
+        <WhyChooseUs />
         <Packages />
         <BookingCTA />
       </main>

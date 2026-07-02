@@ -50,7 +50,9 @@ export function Hero() {
 
             {/* Actions / Buttons */}
             <div className="mt-6 flex flex-wrap justify-center items-center gap-4">
-              <GradientButton>Book Now</GradientButton>
+              <GradientButton>
+                Book Now
+                </GradientButton>
               <button className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-black/45 hover:bg-black/65 backdrop-blur-sm px-6 py-2.5 text-sm font-semibold text-white transition-all active:scale-98 cursor-pointer shadow-md">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full border border-[#d2a153] text-[#d2a153] transition-transform group-hover:scale-105">
                   <Play className="h-2 w-2 fill-[#d2a153] ml-[1px]" />
