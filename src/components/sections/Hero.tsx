@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Container } from "@/components/common/Container";
 import { GradientButton } from "@/components/common/GradientButton";
-import { Play, X } from "lucide-react";
+import { Play, X, Mic, Music, Sliders, Building2 } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export function Hero() {
   const [showMap, setShowMap] = useState(true);
@@ -62,16 +63,39 @@ export function Hero() {
             </div>
 
             {/* Studio Features Tags */}
-            <div className="mt-6 flex flex-wrap justify-center gap-2 text-xs text-neutral-200">
-              <span className="rounded-full border border-white/15 bg-black/30 backdrop-blur-[2px] px-3 py-1 shadow-sm">
-                Podcast Recording
-              </span>
-              <span className="rounded-full border border-white/15 bg-black/30 backdrop-blur-[2px] px-3 py-1 shadow-sm">
-                Video Production
-              </span>
-              <span className="rounded-full border border-white/15 bg-black/30 backdrop-blur-[2px] px-3 py-1 shadow-sm">
-                Studio Rental
-              </span>
+            <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm text-neutral-200">
+              <Link
+                to="/pricing"
+                search={{ tab: "podcast" }}
+                className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-black/45 hover:bg-black/65 hover:border-[#d2a153]/40 hover:shadow-[0_0_15px_rgba(210,161,83,0.25)] text-neutral-200 hover:text-[#f5d59a] px-5 py-2.5 shadow-md backdrop-blur-sm transition-all duration-300 active:scale-95 cursor-pointer"
+              >
+                <Mic className="h-4 w-4 text-[#d2a153]/80" />
+                <span>Podcast Studio</span>
+              </Link>
+              <Link
+                to="/pricing"
+                search={{ tab: "singer" }}
+                className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-black/45 hover:bg-black/65 hover:border-[#d2a153]/40 hover:shadow-[0_0_15px_rgba(210,161,83,0.25)] text-neutral-200 hover:text-[#f5d59a] px-5 py-2.5 shadow-md backdrop-blur-sm transition-all duration-300 active:scale-95 cursor-pointer"
+              >
+                <Music className="h-4 w-4 text-[#d2a153]/80" />
+                <span>Singer Performance</span>
+              </Link>
+              <Link
+                to="/pricing"
+                search={{ tab: "post" }}
+                className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-black/45 hover:bg-black/65 hover:border-[#d2a153]/40 hover:shadow-[0_0_15px_rgba(210,161,83,0.25)] text-neutral-200 hover:text-[#f5d59a] px-5 py-2.5 shadow-md backdrop-blur-sm transition-all duration-300 active:scale-95 cursor-pointer"
+              >
+                <Sliders className="h-4 w-4 text-[#d2a153]/80" />
+                <span>Post Production</span>
+              </Link>
+              <Link
+                to="/pricing"
+                search={{ tab: "rental" }}
+                className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-black/45 hover:bg-black/65 hover:border-[#d2a153]/40 hover:shadow-[0_0_15px_rgba(210,161,83,0.25)] text-neutral-200 hover:text-[#f5d59a] px-5 py-2.5 shadow-md backdrop-blur-sm transition-all duration-300 active:scale-95 cursor-pointer"
+              >
+                <Building2 className="h-4 w-4 text-[#d2a153]/80" />
+                <span>Studio Rental</span>
+              </Link>
             </div>
           </div>
         </Container>
@@ -87,7 +111,7 @@ export function Hero() {
             </button>
             <div className="w-full h-full overflow-hidden rounded-xl border border-neutral-800">
               <iframe
-                src="https://maps.google.com/maps?q=Gulshan,Dhaka&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps?q=23.774211883544922,90.41211700439453&z=17&hl=en&output=embed"
                 className="w-full h-full border-0 [filter:invert(90%)_hue-rotate(180deg)_brightness(80%)_contrast(110%)_grayscale(40%)]"
                 allowFullScreen
                 loading="lazy"

@@ -5,7 +5,7 @@ export const services: Service[] = [
     title: "Podcast Production",
     description: "End-to-end recording, editing, and publishing support.",
     slug: "podcast-production",
-    icon: "/service/1.png",
+    icon: "/service/1.webp",
     longDescription:
       "Get professional, broadcast-quality podcasts without the technical headache. We handle every stage of your podcast creation, from recording in a soundproof environment to distribution across all major networks.",
     includes: [
@@ -45,7 +45,7 @@ export const services: Service[] = [
     title: "Promotional Video",
     description: "High-impact short-form videos for brands and creators.",
     slug: "promotional-video",
-    icon: "/service/2.png",
+    icon: "/service/2.webp",
     longDescription:
       "Capture attention and drive conversions with high-impact promotional videos. Perfect for product launches, brand campaigns, and social media announcements.",
     includes: [
@@ -85,7 +85,7 @@ export const services: Service[] = [
     title: "Video Recording",
     description: "Multi-camera studio shoots in a controlled space.",
     slug: "video-recording",
-    icon: "/service/3.png",
+    icon: "/service/3.webp",
     longDescription:
       "Record your content, presentations, or courses in a soundproof, acoustically treated studio environment with top-tier recording setups.",
     includes: [
@@ -125,7 +125,7 @@ export const services: Service[] = [
     title: "Video & Photography",
     description: "Combined video and photo shoots for campaigns.",
     slug: "video-photography",
-    icon: "/service/4.png",
+    icon: "/service/4.webp",
     longDescription:
       "Maximize your shoot session by capturing high-end video footage and professional photography campaigns simultaneously in one booking.",
     includes: [
@@ -165,7 +165,7 @@ export const services: Service[] = [
     title: "Video Editing",
     description: "Professional coloring, editing, and post-production.",
     slug: "video-editing",
-    icon: "/service/5.png",
+    icon: "/service/5.webp",
     longDescription:
       "Transform raw footage into polished, engaging visual narratives. Our professional editors handle cutting, color, audio, and visual enhancements.",
     includes: [
@@ -205,7 +205,7 @@ export const services: Service[] = [
     title: "Studio Rent",
     description: "Rent our fully equipped studio for shoots.",
     slug: "studio-rent",
-    icon: "/service/6.png",
+    icon: "/service/6.webp",
     longDescription:
       "Bring your own crew and rent our premium studio space. The rental includes access to professional backgrounds, soundproofing, and support rooms.",
     includes: [
@@ -245,7 +245,7 @@ export const services: Service[] = [
     title: "Film Production",
     description: "Full-scale cinematic production and film development.",
     slug: "film-production",
-    icon: "/service/7.png",
+    icon: "/service/7.webp",
     longDescription:
       "Turn your script or concept into a cinematic masterpiece. We offer full film production services including pre-production, filming, and post-production.",
     includes: [
@@ -285,7 +285,7 @@ export const services: Service[] = [
     title: "Background Music",
     description: "Custom scores and background tracks for your media.",
     slug: "background-music",
-    icon: "/service/8.png",
+    icon: "/service/8.webp",
     longDescription:
       "Enhance your video, film, or podcast with unique, custom-produced background tracks and scores tailored to fit your story's emotional beats.",
     includes: [
@@ -325,7 +325,7 @@ export const services: Service[] = [
     title: "Post Production",
     description: "Professional coloring, editing, and post-production.",
     slug: "post-production",
-    icon: "/service/9.png",
+    icon: "/service/9.webp",
     longDescription:
       "Elevate your recorded media to industry standards. We handle advanced video assembly, color matching, vocal cleanups, and subtitle animations.",
     includes: [

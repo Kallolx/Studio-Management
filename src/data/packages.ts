@@ -14,7 +14,7 @@ export const packages: Package[] = [
       "Air Conditioning & High-Speed Wi-Fi",
       "Full Technical Support",
     ],
-    icon: "/price/1.png",
+    icon: "/price/1.webp",
   },
   {
     title: "Standard Package",
@@ -31,7 +31,7 @@ export const packages: Package[] = [
       "Changing Area / Makeup Room",
       "Waiting Room Access",
     ],
-    icon: "/price/2.png",
+    icon: "/price/2.webp",
   },
   {
     title: "Premium Package",
@@ -51,7 +51,7 @@ export const packages: Package[] = [
       "Complimentary Tea / Coffee",
     ],
     popular: true,
-    icon: "/price/3.png",
+    icon: "/price/3.webp",
   },
   {
     title: "Day Long Package 1",
@@ -68,7 +68,7 @@ export const packages: Package[] = [
       "Waiting Room Access",
       "Full Studio Floor Access",
     ],
-    icon: "/price/4.png",
+    icon: "/price/4.webp",
   },
   {
     title: "Day Long Package 2 (Full Day)",
@@ -85,7 +85,7 @@ export const packages: Package[] = [
       "Waiting Room Access",
       "Full Studio Floor Access",
     ],
-    icon: "/price/4.png",
+    icon: "/price/4.webp",
   },
 ];
 
@@ -100,7 +100,7 @@ export const singerPackages: (Package & { note?: string })[] = [
       "AC & Wi-Fi",
       "Furniture & Props Usage",
     ],
-    icon: "/price/1.png",
+    icon: "/price/1.webp",
     note: "Camera, pattern lights, and additional lighting power charges are not included and will be charged separately.",
   },
   {
@@ -115,7 +115,7 @@ export const singerPackages: (Package & { note?: string })[] = [
       "AC & Wi-Fi",
       "Furniture & Props Usage",
     ],
-    icon: "/price/2.png",
+    icon: "/price/2.webp",
     note: "Camera and additional lighting power charges are not included and will be charged separately.",
   },
   {
@@ -131,7 +131,7 @@ export const singerPackages: (Package & { note?: string })[] = [
       "Furniture & Props Usage",
       "Day-Long Package: 10 Hours included",
     ],
-    icon: "/price/3.png",
+    icon: "/price/3.webp",
     note: "Camera and additional lighting power charges are not included and will be charged separately.",
   },
 ];

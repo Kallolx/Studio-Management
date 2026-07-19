@@ -39,7 +39,7 @@ export function BookingCTA() {
   return (
     <section id="contact" className="border-t border-white/5 py-16 bg-transparent relative">
       <Container>
-        <div className="grid gap-8 lg:grid-cols-12 items-stretch max-w-6xl mx-auto">
+        <div className="grid gap-8 lg:grid-cols-12 items-stretch max-w-6xl mx-auto pb-12">
           {/* Left Column: Text & Contact Info */}
           <div className="lg:col-span-5 flex flex-col">
             <div className="space-y-3 mb-6">
@@ -101,7 +101,7 @@ export function BookingCTA() {
 
               {/* Call / Book */}
               <a
-                href="tel:+8801712345678"
+                href="tel:+8801331049821"
                 className="flex items-center justify-between p-3.5 rounded-xl border border-[#d2a153]/10 hover:border-[#d2a153]/30 cursor-pointer transition-all duration-300 group cursor-pointer"
               >
                 <div className="flex items-center gap-3">
@@ -112,7 +112,7 @@ export function BookingCTA() {
                     <span className="text-[10px] text-neutral-500 font-semibold uppercase tracking-wider block">
                       Call / Book
                     </span>
-                    <span className="text-sm font-semibold text-white block">+880 1712-345678</span>
+                    <span className="text-sm font-semibold text-white block">+880 1331-049821</span>
                     <span className="text-[11px] text-neutral-400 font-light block">
                       Call or WhatsApp
                     </span>
@@ -135,7 +135,7 @@ export function BookingCTA() {
                       Email Us
                     </span>
                     <span className="text-sm font-semibold text-white block">
-                      hello@studiostarvibe.com
+                      help@studiostarvibe.com
                     </span>
                     <span className="text-[11px] text-neutral-400 font-light block">
                       For business inquiries

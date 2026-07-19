@@ -39,8 +39,8 @@ const serviceLinks = [
 const contactItems = [
   {
     icon: MapPin,
-    primary: "Flat 5/B (Level-5), House 53/55,",
-    secondary: "Block-B, Niketon Housing Society, Gulshan, Dhaka, Bangladesh",
+    primary: "House -65/55 Block -B,",
+    secondary: "Road-03 Niketon-Gulshan 1, Dhaka 1212",
   },
   {
     icon: Clock,
@@ -49,15 +49,15 @@ const contactItems = [
   },
   {
     icon: Phone,
-    primary: "+880 1712-345678",
+    primary: "+880 1331-049821",
     secondary: "Call or WhatsApp",
-    href: "tel:+8801712345678",
+    href: "tel:+8801331049821",
   },
   {
     icon: Mail,
-    primary: "hello@studiostarvibe.com",
+    primary: "help@studiostarvibe.com",
     secondary: "For business inquiries",
-    href: "mailto:hello@studiostarvibe.com",
+    href: "mailto:help@studiostarvibe.com",
   },
 ];
 
@@ -75,48 +75,6 @@ const iconBoxClass =
 export function Footer() {
   return (
     <footer className="bg-[#06050a] border-t border-white/5">
-      {/* CTA Banner */}
-      <Container>
-        <div className="py-8">
-          <div
-            className="relative flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl px-6 py-5 overflow-hidden"
-            style={{
-              background:
-                "linear-gradient(#0d0b14, #0d0b14) padding-box, linear-gradient(135deg, #a855f7 0%, #d2a153 50%, #a855f7 100%) border-box",
-              border: "1px solid transparent",
-            }}
-          >
-            {/* Subtle bg glow blobs */}
-            <div className="absolute -left-10 top-1/2 -translate-y-1/2 h-32 w-32 rounded-full bg-[#a855f7]/10 blur-3xl pointer-events-none" />
-            <div className="absolute right-40 top-1/2 -translate-y-1/2 h-24 w-24 rounded-full bg-[#d2a153]/8 blur-2xl pointer-events-none" />
-
-            {/* Left: icon + text */}
-            <div className="flex items-center gap-5 relative z-10">
-              {/* Sparkle icon box */}
-              <div className="flex h-12 w-12 border border-[#d2a153]/20 text-[#d2a153] shrink-0 items-center justify-center rounded-xl">
-                <img src="/icons/star.png" alt="star" className="h-6 w-6 object-contain" />
-              </div>
-
-              <div>
-                <h3 className="text-xl md:text-4xl font-serif font-bold text-white leading-tight">
-                  Ready to <em className="not-italic text-[#d2a153]">create with us?</em>
-                  <img
-                    src="/icons/star-2.png"
-                    alt=""
-                    className="inline-block ml-0.2 h-6 w-6 object-contain align-top mt-0.2"
-                  />
-                </h3>
-                <p className="text-sm text-neutral-400">
-                  Bring your ideas to life with our premium studio experience.
-                </p>
-              </div>
-            </div>
-
-            {/* Right: CTA button */}
-            <GradientButton className="relative z-10">Book a Session</GradientButton>
-          </div>
-        </div>
-      </Container>
 
       {/* Main Footer Grid */}
       <Container>

@@ -36,9 +36,9 @@ function LandingPage() {
         <Hero />
         <StudioIntro />
         <Services />
-        <Showcase />
         <WhyChooseUs />
         <Packages />
+        <Showcase />
         <BookingCTA />
       </main>
       <Footer />

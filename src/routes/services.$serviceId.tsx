@@ -351,7 +351,7 @@ function ServiceDetailsPage() {
                     price={pkg.price}
                     unit="/ Session"
                     features={pkg.features}
-                    iconPath={pkg.icon || `/price/${(idx % 4) + 1}.png`}
+                    iconPath={pkg.icon || `/price/${(idx % 4) + 1}.webp`}
                     popular={pkg.popular}
                   />
                 ))}
@@ -413,7 +413,7 @@ function ServiceDetailsPage() {
                             price={tier.price}
                             unit={unitSuffix}
                             features={tier.features}
-                            iconPath={`/price/${(idx % 4) + 1}.png`}
+                            iconPath={`/price/${(idx % 4) + 1}.webp`}
                             note={zone.note}
                           />
                         );
@@ -455,7 +455,7 @@ function ServiceDetailsPage() {
                       price={prodService.startingPrice}
                       isStartingPrice={true}
                       features={formattedFeatures}
-                      iconPath={`/price/${(idx % 4) + 1}.png`}
+                      iconPath={`/price/${(idx % 4) + 1}.webp`}
                     />
                   );
                 })}

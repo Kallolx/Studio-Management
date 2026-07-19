@@ -106,7 +106,7 @@ export function StudioIntro() {
         <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-5 w-full">
             <img
-              src="/about.jpg"
+              src="/about.webp"
               alt="Studio Preview"
               className="h-[300px] sm:h-[460px] w-full object-cover rounded-2xl border border-white/10 shadow-lg"
             />
@@ -150,7 +150,7 @@ export function StudioIntro() {
               {/* Card 1 */}
               <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-[#0d0c0e] p-4 shadow-sm">
                 <img
-                  src="/icons/star.png"
+                  src="/icons/star.webp"
                   alt="Star experience"
                   className="h-14 w-14 object-contain shrink-0"
                 />
@@ -167,7 +167,7 @@ export function StudioIntro() {
               {/* Card 2 */}
               <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-[#0d0c0e] p-4 shadow-sm">
                 <img
-                  src="/icons/reel.png"
+                  src="/icons/reel.webp"
                   alt="Sony 4K Setup"
                   className="h-14 w-14 object-contain shrink-0"
                 />
@@ -184,7 +184,7 @@ export function StudioIntro() {
               {/* Card 3 */}
               <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-[#0d0c0e] p-4 shadow-sm">
                 <img
-                  src="/icons/headphone.png"
+                  src="/icons/headphone.webp"
                   alt="Headphone production"
                   className="h-14 w-14 object-contain shrink-0"
                 />

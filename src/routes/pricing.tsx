@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -14,7 +14,16 @@ import {
 } from "@/data/packages";
 import { ArrowLeft, ArrowRight, Check, Star } from "lucide-react";
 
+type PricingSearch = {
+  tab?: "podcast" | "singer" | "post" | "rental";
+};
+
 export const Route = createFileRoute("/pricing")({
+  validateSearch: (search: Record<string, unknown>): PricingSearch => {
+    return {
+      tab: (search.tab as any) || undefined,
+    };
+  },
   head: () => ({
     meta: [
       { title: "Pricing & Packages — Studio Star Vibe" },
@@ -168,7 +177,14 @@ function UnifiedPriceCard({
 }
 
 function PricingPage() {
+  const { tab } = Route.useSearch();
   const [activeTab, setActiveTab] = useState<"podcast" | "singer" | "post" | "rental">("podcast");
+
+  useEffect(() => {
+    if (tab && ["podcast", "singer", "post", "rental"].includes(tab)) {
+      setActiveTab(tab);
+    }
+  }, [tab]);
 
   return (
     <div className="min-h-screen bg-[#060506] text-white">
@@ -248,7 +264,7 @@ function PricingPage() {
                       price={pkg.price}
                       unit="/ Session"
                       features={pkg.features}
-                      iconPath={pkg.icon || `/price/${(idx % 4) + 1}.png`}
+                      iconPath={pkg.icon || `/price/${(idx % 4) + 1}.webp`}
                       popular={pkg.popular}
                     />
                   ))}
@@ -277,7 +293,7 @@ function PricingPage() {
                       price={pkg.price}
                       unit={idx === 0 ? "/ Hour" : idx === 1 ? "/ 2 Hours" : "/ 10 Hours"}
                       features={pkg.features}
-                      iconPath={pkg.icon || `/price/${(idx % 4) + 1}.png`}
+                      iconPath={pkg.icon || `/price/${(idx % 4) + 1}.webp`}
                       note={pkg.note}
                     />
                   ))}
@@ -312,7 +328,7 @@ function PricingPage() {
                         price={service.startingPrice}
                         isStartingPrice={true}
                         features={formattedFeatures}
-                        iconPath={`/price/${(idx % 4) + 1}.png`}
+                        iconPath={`/price/${(idx % 4) + 1}.webp`}
                       />
                     );
                   })}
@@ -370,7 +386,7 @@ function PricingPage() {
                               price={tier.price}
                               unit={unitSuffix}
                               features={tier.features}
-                              iconPath={`/price/${(idx % 4) + 1}.png`}
+                              iconPath={`/price/${(idx % 4) + 1}.webp`}
                               note={zone.note}
                             />
                           );
