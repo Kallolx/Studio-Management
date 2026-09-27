@@ -69,7 +69,7 @@ export function BookingCTA() {
                     <span className="text-[10px] text-neutral-500 font-semibold uppercase tracking-wider block">
                       Studio Location
                     </span>
-                    <span className="text-sm font-semibold text-white block">Gulshan, Dhaka</span>
+                    <span className="text-sm font-semibold text-white block">Niketon, Gulshan</span>
                     <span className="text-[11px] text-neutral-400 font-light block">
                       Dhaka 1212, Bangladesh
                     </span>

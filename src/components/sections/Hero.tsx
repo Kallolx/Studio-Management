@@ -45,7 +45,7 @@ export function Hero() {
               <span className="font-semibold text-[#f5d59a]">photography</span>,{" "}
               <span className="font-semibold text-[#f5d59a]">video</span> and{" "}
               <span className="font-semibold text-[#f5d59a]">content production</span> studio in
-              Gulsan Dhaka helping creators, brands, artists and businesses produce world-class
+              Niketon, Gulshan, Dhaka helping creators, brands, artists and businesses produce world-class
               content.
             </p>
 
@@ -115,7 +115,7 @@ export function Hero() {
                 className="w-full h-full border-0 [filter:invert(90%)_hue-rotate(180deg)_brightness(80%)_contrast(110%)_grayscale(40%)]"
                 allowFullScreen
                 loading="lazy"
-                title="Gulshan, Dhaka Map"
+                title="Niketon, Gulshan, Dhaka Map"
               />
             </div>
           </div>

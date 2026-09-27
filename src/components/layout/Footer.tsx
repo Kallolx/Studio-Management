@@ -15,7 +15,6 @@ import {
 } from "lucide-react";
 import { GradientButton } from "../common/GradientButton";
 
-
 const StarIcon = () => (
   <img src="/icons/star-2.png" alt="star" className="h-10 w-10 object-contain" />
 );
@@ -39,8 +38,8 @@ const serviceLinks = [
 const contactItems = [
   {
     icon: MapPin,
-    primary: "House -65/55 Block -B,",
-    secondary: "Road-03 Niketon-Gulshan 1, Dhaka 1212",
+    primary: "Niketon, Gulshan,",
+    secondary: "Dhaka 1212, Bangladesh",
   },
   {
     icon: Clock,
@@ -62,11 +61,13 @@ const contactItems = [
 ];
 
 const socials = [
-  { name: "Instagram", iconPath: "/icons/instagram.svg", href: "https://instagram.com" },
-  { name: "YouTube", iconPath: "/icons/youtube.svg", href: "https://youtube.com" },
-  { name: "Facebook", iconPath: "/icons/facebook.svg", href: "https://facebook.com" },
-  { name: "TikTok", iconPath: "/icons/tik-tok.svg", href: "https://tiktok.com" },
-  { name: "WhatsApp", iconPath: "/icons/whatsapp.svg", href: "https://wa.me" },
+  { name: "Facebook", iconPath: "/icons/facebook.svg", href: "https://www.facebook.com/StudioStarVibe" },
+  { name: "YouTube", iconPath: "/icons/youtube.svg", href: "https://www.youtube.com/@StudioStarVibeBD" },
+  {
+    name: "LinkedIn",
+    iconPath: "/icons/linkedin.svg",
+    href: "https://www.linkedin.com/company/studio-star-vibe/",
+  },
 ];
 
 const iconBoxClass =
@@ -75,7 +76,6 @@ const iconBoxClass =
 export function Footer() {
   return (
     <footer className="bg-[#06050a] border-t border-white/5">
-
       {/* Main Footer Grid */}
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-4">
@@ -85,29 +85,10 @@ export function Footer() {
               <img src="/logo.png" alt="Studio Star Vibe" className="h-12 w-auto object-contain" />
             </div>
             <p className="text-sm text-neutral-400 leading-relaxed">
-              Premium podcast, video &amp; content production studio in Dhaka.
+              A premium podcast, photography, and video production studio in Niketon, Gulshan, Dhaka. We help
+              creators, brands, and businesses produce professional content with 4K cameras,
+              broadcast-quality audio, expert production support, and modern studio facilities.
             </p>
-
-            {/* Tagline card */}
-            <div
-              className="flex items-center gap-3 rounded-xl px-4 py-3 border"
-              style={{
-                border: "1px solid transparent",
-                background:
-                  "linear-gradient(#0d0c12, #0d0c12) padding-box, linear-gradient(135deg, #d2a153 0%, #a855f7 100%) border-box",
-              }}
-            >
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#d2a153]/5">
-                <img src="/icons/star.png" alt="star" className="h-5 w-5 object-contain" />
-              </div>
-              <p className="text-xs text-neutral-400 leading-snug">
-                Where creativity meets <br />
-                professional excellence.
-              </p>
-              <div className="ml-auto shrink-0">
-                <img src="/icons/star-2.png" alt="" className="h-7 w-7 object-contain opacity-80" />
-              </div>
-            </div>
 
             <div className="flex items-center gap-2.5 flex-wrap">
               {socials.map((s) => (
@@ -116,6 +97,7 @@ export function Footer() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={s.name}
                   className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-neutral-400 hover:border-[#d2a153]/50 hover:text-[#d2a153] transition-all duration-300 cursor-pointer"
                 >
                   <span

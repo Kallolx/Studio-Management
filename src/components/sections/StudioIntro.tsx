@@ -1,102 +1,37 @@
 import { Container } from "@/components/common/Container";
 
-const brands = [
-  {
-    id: "lionic",
-    render: () => (
-      <div className="flex items-center gap-2 shrink-0">
-        <svg
-          className="h-5 w-5 text-[#d2a153] fill-[#d2a153]/10"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth="1.5"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
-          />
-        </svg>
-        <div className="flex flex-col leading-none">
-          <span className="text-[10px] font-bold tracking-widest text-[#f5d59a] font-serif">
-            LIONIC
-          </span>
-          <span className="text-[6px] tracking-widest text-neutral-500 font-semibold uppercase mt-0.5">
-            Multimedia
-          </span>
-        </div>
-      </div>
-    ),
-  },
-  {
-    id: "ar-movie",
-    render: () => (
-      <div className="flex items-center gap-1.5 shrink-0">
-        <span className="text-sm font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 font-sans leading-none">
-          AR
-        </span>
-        <div className="flex flex-col leading-none">
-          <span className="text-[9px] font-bold tracking-wider text-white">MOVIE</span>
-          <span className="text-[6px] tracking-widest text-neutral-500 font-semibold uppercase mt-0.5">
-            Network
-          </span>
-        </div>
-      </div>
-    ),
-  },
-  {
-    id: "nova",
-    render: () => (
-      <div className="flex items-center gap-2 shrink-0">
-        <span className="text-xs font-bold tracking-widest text-cyan-400 font-mono leading-none">
-          NOVA
-        </span>
-        <div className="flex flex-col leading-none">
-          <span className="text-[9px] font-medium tracking-wider text-white">CREATIVE</span>
-          <span className="text-[6px] tracking-widest text-neutral-500 font-semibold uppercase mt-0.5">
-            Agency
-          </span>
-        </div>
-      </div>
-    ),
-  },
-  {
-    id: "nexus",
-    render: () => (
-      <div className="flex items-center gap-2 shrink-0">
-        <svg
-          className="h-4.5 w-4.5 text-blue-400 fill-blue-400/10"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="none"
-        >
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-        </svg>
-        <div className="flex flex-col leading-none">
-          <span className="text-[10px] font-bold tracking-widest text-white">NEXUS</span>
-          <span className="text-[6px] tracking-widest text-neutral-500 font-semibold uppercase mt-0.5">
-            Media Labs
-          </span>
-        </div>
-      </div>
-    ),
-  },
-  {
-    id: "golden-gate",
-    render: () => (
-      <div className="flex items-center gap-2 shrink-0">
-        <span className="text-xs font-semibold text-[#f5d59a] tracking-[0.15em] font-serif leading-none">
-          GOLDEN GATE
-        </span>
-        <div className="flex flex-col leading-none">
-          <span className="text-[6px] tracking-widest text-neutral-500 font-semibold uppercase mt-0.5">
-            Productions
-          </span>
-        </div>
-      </div>
-    ),
-  },
+// Partner logos from /public/brand
+const brandLogos = [
+  "AA-Series.webp",
+  "AR-Movie-Netowark-logo-ar.webp",
+  "Bangla-Melodies.webp",
+  "Beat-Haven-Png.webp",
+  "Drama-Hungama-(Logo).webp",
+  "EXtra-Filmaniac.webp",
+  "Finova.webp",
+  "Islamic-Bhuban.webp",
+  "KINGSS.webp",
+  "LIONIC-HOLYY.webp",
+  "LMG-logo.webp",
+  "Lionic-Folk-Station-PNG-(1).webp",
+  "Lionic-Magic-PNG.webp",
+  "Lionic-Music.webp",
+  "Lionic-Studio.webp",
+  "Lionic-classic-PNG.webp",
+  "Lofi-JPG-2.webp",
+  "Logo-01-Final.webp",
+  "Logoo.webp",
+  "Niye-NEN-45.webp",
+  "PMC.webp",
+  "PNG.webp",
+  "Porane-Baula-logo-Borderless.webp",
+  "STREAMO-DIGITAL-MUSIC.webp",
+  "Showbiz24net.webp",
+  "SoulTale-Bangla.webp",
+  "Star-Vabe-PNG.webp",
+  "The-Dramatic.webp",
+  "Track-Vision.webp",
+  "islamic-somoy.webp",
 ];
 
 export function StudioIntro() {
@@ -196,35 +131,36 @@ export function StudioIntro() {
                 </div>
               </div>
             </div>
-
-            {/* Partnership Block with Infinite Marquee Loop */}
-            <div className="mt-8 flex flex-col items-center rounded-xl border border-white/10 bg-[#0d0c0e]/30 px-5 py-3.5 shadow-sm select-none overflow-hidden sm:flex-row w-full max-w-full">
-              <span className="text-[10px] uppercase tracking-wider font-semibold text-neutral-400 shrink-0 mb-3 sm:mb-0">
-                In proud partnership with
-              </span>
-              <div className="hidden h-4 w-px bg-white/10 mx-4 shrink-0 sm:block" />
-
-              {/* Infinite Scrolling Track */}
-              <div className="relative w-full min-w-0 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_15%,white_85%,transparent)]">
-                <div className="flex items-center gap-12 w-max animate-marquee">
-                  {/* Duplicate 1 */}
-                  {brands.map((brand) => (
-                    <div key={`d1-${brand.id}`}>{brand.render()}</div>
-                  ))}
-                  {/* Duplicate 2 */}
-                  {brands.map((brand) => (
-                    <div key={`d2-${brand.id}`}>{brand.render()}</div>
-                  ))}
-                  {/* Duplicate 3 */}
-                  {brands.map((brand) => (
-                    <div key={`d3-${brand.id}`}>{brand.render()}</div>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </Container>
+
+      {/* Partnership Block with Infinite Marquee Loop (full width) */}
+      <div className="mt-16 w-full select-none">
+        <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_8%,white_92%,transparent)]">
+          <div
+            className="flex w-max items-center animate-marquee"
+            style={{ animationDuration: "80s" }}
+          >
+            {[0, 1].map((dup) =>
+              brandLogos.map((file) => (
+                <div
+                  key={`${dup}-${file}`}
+                  className="flex h-20 w-40 shrink-0 items-center justify-center px-6 sm:h-24 sm:w-48"
+                  aria-hidden={dup === 1}
+                >
+                  <img
+                    src={`/brand/${encodeURIComponent(file)}`}
+                    alt={dup === 0 ? file.replace(/\.webp$/, "").replace(/[-_]/g, " ") : ""}
+                    loading="lazy"
+                    className="max-h-full max-w-full object-contain opacity-80 transition-opacity hover:opacity-100"
+                  />
+                </div>
+              )),
+            )}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

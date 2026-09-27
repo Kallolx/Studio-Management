@@ -12,16 +12,16 @@ import { BookingCTA } from "@/components/sections/BookingCTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Studio Star Vibe — Premium Podcast & Production Studio in Gulshan, Dhaka" },
+      { title: "Studio Star Vibe — Premium Podcast & Production Studio in Niketon, Gulshan, Dhaka" },
       {
         name: "description",
         content:
-          "Premium podcast, video and content production studio in Gulshan, Dhaka. Book recording, video production, and studio rental sessions.",
+          "Premium podcast, video and content production studio in Niketon, Gulshan, Dhaka. Book recording, video production, and studio rental sessions.",
       },
       { property: "og:title", content: "Studio Star Vibe — Premium Podcast & Production Studio" },
       {
         property: "og:description",
-        content: "Professional podcast, video and content production space in Gulshan, Dhaka.",
+        content: "Professional podcast, video and content production space in Niketon, Gulshan, Dhaka.",
       },
     ],
   }),
